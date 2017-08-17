@@ -49,31 +49,33 @@
 			<div class="middle">
 				<div class="left"></div>
 				<div class="center">
+					<p class="t" align="center">欢迎访问仓库管理</p>
 					<ul>
-						<li><span class="label_txt">用户名</span><input tabindex="1"
+						<li><span class="label_txt">用户名：</span><input tabindex="1"
 							class="input_txt" name="username" maxLength="20"
 							autofocus="autofocus" placeholder="请输入用户名" />
 						</li>
-						<li><span class="label_txt">密&nbsp;&nbsp;&nbsp;码</span><input tabindex="2"
+						<li><span class="label_txt">密&emsp;码：</span><input tabindex="2"
 							type="password" class="input_txt" name="password"
 							maxLength="20" placeholder="请输入密码" />
 						</li>
-						<li><span class="label_txt"></span> <span
+						<li><span class="label_txt"></span><span
 							style="font-size: 12px; color: red">${requestScope.msg}</span></li>
-						<li><a href="javascript:void(0)" onclick="login();" tabindex="4"
+						<li class="btnLi"><span class="label_txt"></span><a href="javascript:void(0)" onclick="login();" tabindex="4"
 							class="btn" onmouseover="this.className='btn_over';"
-							onmouseout="this.className='btn';"></a></li>
+							onmouseout="this.className='btn';">登录</a>
+						</li>
 					</ul>
 				</div>
 				<div class="right"></div>
 			</div>
 			<div class="bottom"></div>
 		</div>
-		<div class="logo">欢迎访问仓库管理</div>
+		<!--<div class="logo">欢迎访问仓库管理</div>-->
 		<!-- 
 		<div class="gis"></div>
 		 -->
-		<div class="earth"></div>
+		<!--<div class="earth"></div>-->
 	</form>
 </body>
 </html>

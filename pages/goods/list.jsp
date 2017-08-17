@@ -40,11 +40,13 @@
 		//显示Menu索引
 		showMenu('page_goods');
 	});
+	
+	
 	</script>
 </head>
 <body>
 
-	<form name="form1" action="" method="post" class="form-inline" >
+	<form name="form1" action="" method="post" class="form-inline">
 		<%@include file="/static/include/menu.jsp" %>
 		
 		<div class="tableSearch">
@@ -61,27 +63,27 @@
 			</div>
 	 
 			
-			<button type="button" class="btn btn-default" onclick="oper_list();" name="search">
+			<button type="button" class="btn btn-default" onclick="oper_list();" name="search" >
 			 		<span class="glyphicon glyphicon-search"></span> 查 询
 			</button>
 			<button type="button" class="btn btn-default" onclick="resetForm();">
 			 		<span class="glyphicon glyphicon-refresh"></span> 重 置
 			</button>
-			<button type="button" class="btn btn-default" onclick="oper_add();">
+			<button type="button" class="btn btn-default" onclick="oper_add();" >
 			 		<span class="glyphicon glyphicon-plus"></span> 新 增
 			</button>
 		</div>
 
 		<!-- 数据列表 -->
+		<!--<div class="tableBox" id="table-resize" style="position: relative;">-->
 		<table class="table table-striped table-bordered table-hover">
-			<thead>
+		    <thead>
 				<tr>
 					<th>序号</th>
 					<%  // 列表头部 %>
 					<th>名称</th> 
 					<th>种类</th> 
 					<th>说明</th> 
- 
 					<th>操作</th>
 				</tr>
 			</thead>
@@ -112,9 +114,19 @@
 				</tbody>
 			</c:forEach>
 		</table>
-		
+	<!--	</div>-->
 		<%@include file="/static/include/paginator.jsp" %>
 			
 	</form>
+	
+	 <script>
+     	var winH = $(window).height();
+     	var bodyH = $('.form-inline').height();
+     	var lH = 396-bodyH;
+     	if(bodyH<396){
+     		$('.form-inline .table').css('margin-bottom',lH);
+     	}
+     </script>
+	
 </body>
 </html>

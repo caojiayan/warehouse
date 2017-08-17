@@ -95,4 +95,12 @@ $(function(){
 			</table>
 			<%@include file="/static/include/paginator.jsp" %>
 	</form>
+	<script>
+     	var winH = $(window).height();
+     	var bodyH = $('.form-inline').height();
+     	var lH = 396-bodyH;
+     	if(bodyH<396){
+     		$('.form-inline .table').css('margin-bottom',lH);
+     	}
+     </script>
 </body>

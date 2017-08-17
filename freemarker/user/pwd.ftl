@@ -3,7 +3,7 @@
 <head>
 	<base href="/system/">
 	<title>仓储管理</title>
-	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta http-equiv="Content-Type" content="text/html" charset="utf-8">
 	<link rel="icon" href="favicon.ico"/>
 	<link rel="shortcut icon" href="favicon.ico"/>
 	<meta http-equiv="pragma" content="no-cache">
